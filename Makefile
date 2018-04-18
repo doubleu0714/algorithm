@@ -12,3 +12,16 @@ printstring : printstring.c
 
 printstring_desc : printstring_desc.c
 	gcc -o printstring_desc printstring_desc.c
+
+binarycalculator : binarycalculator.c
+	gcc -o binarycalculator binarycalculator.c
+
+sum : sum.c
+	gcc -o sum sum.c
+
+saveinttoarray : saveinttoarray.c
+	gcc -o saveinttoarray saveinttoarray.c
+
+search : search.c
+	gcc -o search search.c
+	
