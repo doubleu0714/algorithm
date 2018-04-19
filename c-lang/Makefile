@@ -25,3 +25,5 @@ saveinttoarray : saveinttoarray.c
 search : search.c
 	gcc -o search search.c
 	
+searchmaxvalue : searchmaxvalue.c
+	gcc -o searchmaxvalue searchmaxvalue.c
