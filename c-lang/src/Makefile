@@ -42,3 +42,6 @@ nqueens : nqueens.c
 
 powerset : powerset.c
 	gcc -o ../obj/powerset powerset.c
+
+sort_bubble : sort_bubble.c
+	gcc -o ../obj/sort_bubble sort_bubble.c
