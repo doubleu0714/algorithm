@@ -7,10 +7,6 @@
 #include <stdio.h>
 
 typedef enum {false, true} boolean; // c 에서는 boolean type이 없기 때문에 typedef로 설정해 사용함
-static const int PATH_WAY = 0; // 길 표시값
-static const int WALL = 1; // 벽 표시값
-static const int BLOCK = 2; // 가봤지만 결국 막혔던 길에 대한 표시값
-static const int PATH = 3; // 가능한 길에 대한 표시값
 
 static int maze[8][8] = {
     {0,0,0,0,0,0,0,1},
@@ -22,8 +18,12 @@ static int maze[8][8] = {
     {0,0,0,1,0,0,0,1},
     {0,1,1,1,0,1,0,0}
 };
-static int NX = sizeof(maze[0]) / sizeof(int);
-static int NY = sizeof(maze) / sizeof(maze[0]);
+static const int PATH_WAY = 0; // 길 표시값
+static const int WALL = 1; // 벽 표시값
+static const int BLOCK = 2; // 가봤지만 결국 막혔던 길에 대한 표시값
+static const int PATH = 3; // 가능한 길에 대한 표시값
+static const int NX = sizeof(maze[0]) / sizeof(int);
+static const int NY = sizeof(maze) / sizeof(maze[0]);
 
 boolean findMaze(int x, int y)
 {
