@@ -36,3 +36,9 @@ maze : maze.c
 
 countcells : countcells.c
 	gcc -o ../obj/countcells countcells.c
+
+nqueens : nqueens.c
+	gcc -o ../obj/nqueens nqueens.c
+
+powerset : powerset.c
+	gcc -o ../obj/powerset powerset.c
