@@ -30,3 +30,6 @@ searchmaxvalue : searchmaxvalue.c
 
 binarysearch : binarysearch.c
 	gcc -o ../obj/binarysearch binarysearch.c
+
+maze : maze.c
+	gcc -o ../obj/maze maze.c
