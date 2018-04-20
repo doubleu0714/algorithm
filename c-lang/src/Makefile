@@ -27,3 +27,6 @@ search : search.c
 	
 searchmaxvalue : searchmaxvalue.c
 	gcc -o ../obj/searchmaxvalue searchmaxvalue.c
+
+binarysearch : binarysearch.c
+	gcc -o ../obj/binarysearch binarysearch.c
