@@ -3,3 +3,6 @@ bubblesort : bubblesort.c
 
 selectionsort : selectionsort.c
 	gcc -o ../../obj/selectionsort selectionsort.c
+
+insertionsort : insertionsort.c
+	gcc -o ../../obj/insertionsort insertionsort.c
