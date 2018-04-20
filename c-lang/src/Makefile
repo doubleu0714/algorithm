@@ -33,3 +33,6 @@ binarysearch : binarysearch.c
 
 maze : maze.c
 	gcc -o ../obj/maze maze.c
+
+countcells : countcells.c
+	gcc -o ../obj/countcells countcells.c
