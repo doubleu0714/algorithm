@@ -6,3 +6,6 @@ selectionsort : selectionsort.c
 
 insertionsort : insertionsort.c
 	gcc -o ../../obj/insertionsort insertionsort.c
+
+mergesort : mergesort.c
+	gcc -o ../../obj/mergesort mergesort.c
