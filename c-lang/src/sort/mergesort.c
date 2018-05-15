@@ -7,12 +7,13 @@ typedef enum {false, true} boolean; // c 에서는 boolean type이 없기 때문
 void printDatas(int * datas, int size);
 void divideData(int * datas, int begin, int end);
 void mergeData(int * datas, int begin, int middle, int end);
+#define DATA_SIZE 5
 
 int main()
 {
     int i = 0;
-    int datas[10];
-    while(i < 10)
+    int datas[DATA_SIZE];
+    while(i < DATA_SIZE)
     {
         scanf("%d", &datas[i]);
         i++;
@@ -20,10 +21,10 @@ int main()
 
     printDatas(datas, sizeof(datas) / sizeof(int));
 
-    divideData(datas, 0, 9);
+    divideData(datas, 0, DATA_SIZE - 1);
 
     // 결과 데이터를 출력
-    printDatas(datas, sizeof(datas) / sizeof(int));
+    printDatas(datas, DATA_SIZE);
     return 0;
 }
 
@@ -43,6 +44,7 @@ void divideData(int * datas, int begin, int end)
         divideData(datas, middle + 1, end);
         mergeData(datas, begin, middle, end);
     }
+    printf("end divideData begin : %d, end : %d\n", begin, end);
 }
 
 /**
@@ -50,7 +52,7 @@ void divideData(int * datas, int begin, int end)
  */
 void mergeData(int * datas, int begin, int middle, int end)
 {
-    int tmpDatas[10];
+    int tmpDatas[DATA_SIZE];
     int tmpIdx = begin, i = begin, j = middle + 1;
 
     while(i <= middle && j <= end)
@@ -80,7 +82,7 @@ void mergeData(int * datas, int begin, int middle, int end)
         datas[i] = tmpDatas[i];
     }
     printf("begin : %d, middle : %d, end : %d => ", begin, middle, end);
-    printDatas(datas, 10);
+    printDatas(datas, DATA_SIZE);
 }
 
 void printDatas(int * datas, int size)
