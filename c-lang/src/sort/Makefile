@@ -9,3 +9,6 @@ insertionsort : insertionsort.c
 
 mergesort : mergesort.c
 	gcc -o ../../obj/mergesort mergesort.c
+
+quicksort : quicksort.c
+	gcc -o ../../obj/quicksort quicksort.c
