@@ -1,1 +1,6 @@
+.vscode
 c-lang/obj/*
+java/**/.settings
+java/**/target
+java/**/.project
+java/**/.classpath

@@ -5,5 +5,7 @@ public class Power {
         
     }
 
-    public double calPower(double base, int exponent)
+    public double calPower(double base, int exponent) {
+        return 0.0;
+    }
 }
