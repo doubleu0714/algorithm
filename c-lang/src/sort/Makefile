@@ -12,3 +12,6 @@ mergesort : mergesort.c
 
 quicksort : quicksort.c
 	gcc -o ../../obj/quicksort quicksort.c
+
+heapsort : heapsort.c
+	gcc -o ../../obj/heapsort heapsort.c
