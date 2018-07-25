@@ -15,3 +15,6 @@ quicksort : quicksort.c
 
 heapsort : heapsort.c
 	gcc -o ../../obj/heapsort heapsort.c
+
+priorityqueue : priorityqueue.c
+	gcc -o ../../obj/priorityqueue priorityqueue.c
