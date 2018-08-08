@@ -39,11 +39,8 @@ public class Power {
             return base * calPower(base, exponent - 1);
         }
     }
-<<<<<<< HEAD
 
     public double calPower(double base, int exponent) {
         return 0.0;
     }
-=======
->>>>>>> 525cdf3bf3921f13fae5da61d056b8a1edf5bf3c
 }
